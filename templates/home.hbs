@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #3498db, #e74c3c);
+            animation: backgroundAnimation 3s infinite alternate;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            animation: scaleAnimation 2s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(45deg, #fae900, #3ce77e);
+            }
+            25% {
+                background: linear-gradient(45deg, #3cb9e7, #f1fdfe);
+            }
+            50% {
+                background: linear-gradient(45deg, #3ce7ab, #f4caed);
+            }
+            75% {
+                background: linear-gradient(45deg, #a8fb71, #ffb6d3);
+            }
+            100% {
+                background: linear-gradient(45deg, #94bfe1, #f5a59c);
+            }
+        }
+
+        @keyframes scaleAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: tomato;">Welcome to the Home Page</h1>
+</body>
+</html>
